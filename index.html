@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ateliê Elegance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header principal com logo e navegação -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">
+        <span>Ateliê</span>
+        Elegance
+      </a>
+      <button class="menu-toggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#home">Home</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero section com chamada principal -->
+  <main>
+    <section id="home" class="hero-section">
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow">Moda personalizada</p>
+          <h1>Elegância sob medida para você</h1>
+          <p>Descubra peças exclusivas que combinam conforto, estilo e sofisticação.</p>
+          <a href="#contato" class="button-primary">Agendar horário</a>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <div class="hero-card">Seu estilo, nossa assinatura.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre o Ateliê -->
+    <section id="sobre" class="section about-section">
+      <div class="container section-grid">
+        <div class="section-text">
+          <span class="section-label">Sobre o Ateliê</span>
+          <h2>Um espaço onde moda e exclusividade se encontram</h2>
+          <p>Ateliê Elegance cria peças sob medida para clientes que buscam uma experiência de moda única. Com atenção a cada detalhe, oferecemos design atemporal, cortes precisos e atendimento personalizado.</p>
+          <div class="values-grid">
+            <div>
+              <h3>Missão</h3>
+              <p>Realçar a confiança de cada cliente com roupas que traduzem identidade e elegância.</p>
+            </div>
+            <div>
+              <h3>Visão</h3>
+              <p>Ser referência em moda personalizada, com qualidade artesanal e estilo contemporâneo.</p>
+            </div>
+            <div>
+              <h3>Valores</h3>
+              <p>Respeito, criatividade, sustentabilidade e excelência em cada etapa do atendimento.</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-image" aria-hidden="true">
+          <div class="image-frame">Inspiração e requinte.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Serviços oferecidos -->
+    <section id="servicos" class="section services-section">
+      <div class="container">
+        <span class="section-label">Serviços</span>
+        <h2>Criação e cuidado para a sua imagem</h2>
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon">✂️</div>
+            <h3>Roupas sob medida</h3>
+            <p>Peças únicas desenvolvidas de acordo com seu estilo, corpo e ocasião.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">🧵</div>
+            <h3>Ajustes e reformas</h3>
+            <p>Transformamos suas roupas favoritas com acabamento preciso e renovado.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">💎</div>
+            <h3>Consultoria de estilo</h3>
+            <p>Orientação personalizada para montar looks sofisticados e alinhados à sua rotina.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfólio com galeria de imagens -->
+    <section id="portfolio" class="section portfolio-section">
+      <div class="container">
+        <span class="section-label">Portfólio</span>
+        <h2>Nossos trabalhos em destaque</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item">Vestido clássico</div>
+          <div class="gallery-item">Conjunto elegante</div>
+          <div class="gallery-item">Look contemporâneo</div>
+          <div class="gallery-item">Detalhe artesanal</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Depoimentos de clientes -->
+    <section class="section testimonials-section">
+      <div class="container">
+        <span class="section-label">Depoimentos</span>
+        <h2>O que nossos clientes dizem</h2>
+        <div class="testimonials-grid">
+          <blockquote>
+            <p>"O atendimento foi impecável e o vestido ficou mais bonito do que eu imaginava."</p>
+            <cite>— Carolina M.</cite>
+          </blockquote>
+          <blockquote>
+            <p>"Recomendo para quem busca qualidade, elegância e peças realmente exclusivas."</p>
+            <cite>— Rafaela S.</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato com formulário e informações -->
+    <section id="contato" class="section contact-section">
+      <div class="container section-grid">
+        <div class="contact-form-wrapper">
+          <span class="section-label">Contato</span>
+          <h2>Vamos criar algo especial?</h2>
+          <form id="contactForm" novalidate>
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome" required />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" rows="5" placeholder="Como podemos ajudar?" required></textarea>
+            <button type="submit" class="button-secondary">Enviar mensagem</button>
+            <p class="form-feedback" aria-live="polite"></p>
+          </form>
+        </div>
+        <aside class="contact-info">
+          <div>
+            <h3>Fale conosco</h3>
+            <p>WhatsApp: <a href="https://wa.me/5511999999999" target="_blank" rel="noreferrer">+55 11 99999-9999</a></p>
+            <p>Instagram: <a href="https://instagram.com/atelieelegance" target="_blank" rel="noreferrer">@atelieelegance</a></p>
+            <p>Endereço: Rua da Moda, 123 - Centro, São Paulo</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer com redes sociais e direitos autorais -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Ateliê Elegance © 2026. Todos os direitos reservados.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="WhatsApp">WA</a>
+        <a href="#" aria-label="Facebook">FB</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
