@@ -47,7 +47,7 @@ textarea {
   margin: 0 auto;
 }
 
-..section {
+.section {
   padding: 5rem 0;
   opacity: 0;
   transform: translateY(20px);
